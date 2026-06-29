@@ -13,7 +13,7 @@ const projects = [
 	},
 	{
 		name: "Tête en l'hair",
-		description: "Site fictif d'un coiffeur. Moderne et style",
+		description: "Site fictif d'un coiffeur. Moderne et style, prise de rdv par telephone",
 		image: "/assets/coupe-cheveux.jpg",
 		href: "/barber-shop",
 	},
