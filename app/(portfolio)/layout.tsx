@@ -29,6 +29,22 @@ export const metadata: Metadata = {
 		"93",
 		"Aulnay-sous-Bois",
 	],
+	openGraph: {
+		title: "Titouan Hellégouarch — Développeur web",
+		description: "Sites vitrines pour commerces de proximité. À partir de 600€.",
+		url: "https://titouanhellegouarch.fr",
+		siteName: "Titouan Hellégouarch",
+		locale: "fr_FR",
+		type: "website",
+		images: [
+			{
+				url: "/assets/pdp.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Création de sites vitrines pour commerces de proximité",
+			},
+		],
+	},
 	metadataBase: new URL("https://titouanhellegouarch.fr"),
 };
 
