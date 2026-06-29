@@ -37,7 +37,8 @@ export function SiteFooter() {
 				</nav>
 
 				<a
-					href="#"
+					href="https://instagram.com"
+					target="_blank"
 					aria-label="Instagram de Barber 93"
 					className="inline-flex size-10 items-center justify-center rounded-sm border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
 				>

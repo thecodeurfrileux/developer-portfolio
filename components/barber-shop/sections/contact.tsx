@@ -74,7 +74,7 @@ export function Contact() {
 						</div>
 
 						<a
-							href="tel:+33148000093"
+							href="tel:+33652413488"
 							className="inline-flex items-center justify-center rounded-sm bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
 						>
 							Prendre rendez-vous

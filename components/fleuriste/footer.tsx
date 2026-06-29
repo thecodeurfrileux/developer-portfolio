@@ -27,14 +27,15 @@ export function Footer() {
 
 				<div className="flex gap-6">
 					<a
-						href="#"
+						href="https://instagram.com"
+						target="_blank"
 						aria-label="Instagram"
 						className="text-stone transition-colors hover:text-gold"
 					>
 						<InstagramIcon />
 					</a>
 					<a
-						href="#"
+						href="https://pinterest.com"
 						aria-label="Pinterest"
 						className="text-stone transition-colors hover:text-gold"
 					>

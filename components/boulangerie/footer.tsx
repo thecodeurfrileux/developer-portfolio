@@ -33,9 +33,9 @@ const links = [
 ];
 
 const socials = [
-	{ href: "#", label: "Instagram", icon: InstagramIcon },
-	{ href: "#", label: "Facebook", icon: FacebookIcon },
-	{ href: "#", label: "X (Twitter)", icon: XIcon },
+	{ href: "https://instagram.com", label: "Instagram", icon: InstagramIcon },
+	{ href: "https://facebook.com", label: "Facebook", icon: FacebookIcon },
+	{ href: "https://x.com", label: "X (Twitter)", icon: XIcon },
 ];
 
 export function Footer() {
@@ -70,6 +70,8 @@ export function Footer() {
 							<a
 								key={social.label}
 								href={social.href}
+								target="_blank"
+								rel="noopener noreferrer"
 								aria-label={social.label}
 								className="flex size-10 items-center justify-center rounded-full bg-background/10 text-background transition-colors hover:bg-primary"
 							>
