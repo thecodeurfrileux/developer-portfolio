@@ -47,8 +47,8 @@ export function SiteFooter() {
 
 			<div className="mx-auto mt-8 max-w-6xl px-4 md:px-6">
 				<p className="border-t border-border pt-6 text-center text-xs text-muted-foreground">
-					© {new Date().getFullYear()} Barber 93 · Aulnay-sous-Bois, 93600 · Le style,
-					c&apos;est sérieux.
+					© {new Date().getFullYear()} Titouan Hellégouarch · Aulnay-sous-Bois, 93600 · Le
+					style, c&apos;est sérieux.
 				</p>
 			</div>
 		</footer>

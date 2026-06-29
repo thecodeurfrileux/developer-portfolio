@@ -9,7 +9,7 @@ const projects = [
 		name: "Fleuriste du Marché",
 		description: "Identité élégante, menu en ligne et réservation par mail.",
 		image: "/assets/bouquet-rose.jpg",
-		href: "https://atelier-bloom-website.vercel.app/",
+		href: "/fleuriste",
 	},
 	{
 		name: "Tête en l'hair",
@@ -21,7 +21,7 @@ const projects = [
 		name: "Maison Lefèvre",
 		description: "Site vitrine d'une boulangerie chaleureux avec horaires et carte des pains.",
 		image: "/assets/pain.jpg",
-		href: "https://maison-lefevre-bakery-site.vercel.app/",
+		href: "/boulangerie",
 	},
 ];
 
