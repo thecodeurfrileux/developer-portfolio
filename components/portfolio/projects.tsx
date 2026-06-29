@@ -15,7 +15,7 @@ const projects = [
 		name: "Tête en l'hair",
 		description: "Site fictif d'un coiffeur. Moderne et style",
 		image: "/assets/coupe-cheveux.jpg",
-		href: "https://barber-93-website-design.vercel.app/",
+		href: "/barber-shop",
 	},
 	{
 		name: "Maison Lefèvre",
