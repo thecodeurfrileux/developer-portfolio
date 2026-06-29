@@ -22,6 +22,13 @@ export const metadata: Metadata = {
 	},
 	description:
 		"Développeur web spécialisé dans la création de sites vitrines pour les commerces de proximité.",
+	keywords: [
+		"Titouan Hellégouarch",
+		"développeur web",
+		"sites vitrines",
+		"93",
+		"Aulnay-sous-Bois",
+	],
 	metadataBase: new URL("https://titouanhellegouarch.fr"),
 };
 
