@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 
 const line1 = ["Je", "crée", "des", "sites"];
-const line2 = ["qui", "font", "vendre."];
+const line2 = ["pour", "les", "commerces", "de", "ma", "ville."];
+const line3 = ["Pensés", "pour", "attirer", "des", "clients."];
 
 export function Hero() {
 	let wordIndex = 0;
@@ -32,9 +33,10 @@ export function Hero() {
 			className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-36 md:grid-cols-2 md:pt-44"
 		>
 			<div>
-				<h1 className="font-heading text-5xl font-light leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+				<h1 className="font-heading text-4xl font-light leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
 					<span className="block">{line1.map(word)}</span>
 					<span className="block">{line2.map(word)}</span>
+					<span className="block">{line3.map(word)}</span>
 				</h1>
 
 				<motion.p
