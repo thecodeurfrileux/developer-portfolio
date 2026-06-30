@@ -7,6 +7,7 @@ import { SiteFooter } from '@/components/portfolio/site-footer'
 import { SiteNav } from '@/components/portfolio/site-nav'
 import { StatsBar } from '@/components/portfolio/stats-bar'
 import { Testimonials } from '@/components/portfolio/testimonials'
+import { WhyMatters } from '@/components/portfolio/why-matters'
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <SiteNav />
       <Hero />
       <StatsBar />
+      <WhyMatters />
       <Projects />
       <Services />
       <About />
