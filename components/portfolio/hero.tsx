@@ -46,7 +46,7 @@ export function Hero() {
 					transition={{ duration: 0.6, delay: 1 }}
 				>
 					Sites vitrines pour commerces de proximité —{" "}
-					<span className="text-foreground">à partir de 700€ ou 100€/mois</span>.
+					<span className="text-foreground">à partir de 600€ ou 100€/mois</span>.
 				</motion.p>
 
 				<motion.div

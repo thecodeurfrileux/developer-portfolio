@@ -7,7 +7,7 @@ import { FadeIn } from "./fade-in";
 const services = [
 	{
 		name: "Site vitrine essentiel",
-		price: "700€",
+		price: "600€",
 		features: [
 			"Une page élégante et responsive au couleur de l'entreprise",
 			"Coordonnées, horaires et plan",

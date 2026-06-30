@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
 	{ value: "3", label: "sites livrés" },
-	{ value: "700€", label: "à partir de" },
+	{ value: "600€", label: "à partir de" },
 	{ value: "1 semaine", label: "de délai" },
 ];
 

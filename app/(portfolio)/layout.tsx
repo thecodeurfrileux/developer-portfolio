@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 		"développeur web à Aulnay-sous-Bois (Seine-Saint-Denis). Création de sites vitrines pour commerçants, artisans et indépendants du 93. Devis rapide, livraison en 1 semaine",
 	openGraph: {
 		title: "Titouan Hellégouarch — Développeur web",
-		description: "Sites vitrines pour commerces de proximité. À partir de 700€.",
+		description: "Sites vitrines pour commerces de proximité. À partir de 600€.",
 		url: "https://titouanhellegouarch.fr",
 		siteName: "Titouan Hellégouarch",
 		locale: "fr_FR",
