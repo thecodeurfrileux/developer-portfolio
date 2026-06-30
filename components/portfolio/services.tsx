@@ -25,7 +25,7 @@ const services = [
 	},
 	{
 		name: "Maintenance mensuelle",
-		price: "50€/mois",
+		price: "60€/mois",
 		features: [
 			"Mises à jour et sauvegardes",
 			"Petites modifications de contenu",

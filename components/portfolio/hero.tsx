@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 
-const line1 = ["Je", "crée", "des", "sites"];
-const line2 = ["pour", "les", "commerces", "de", "ma", "ville."];
-const line3 = ["Pensés", "pour", "attirer", "des", "clients."];
+const line1 = ["Développeur", "Web", "à", "Aulnay-sous-Bois"];
+const line2 = ["Création", "de", "Sites", "Vitrines."];
+const line3 = ["Titouan", "Hellégouarch"];
 
 export function Hero() {
 	let wordIndex = 0;
@@ -46,7 +46,7 @@ export function Hero() {
 					transition={{ duration: 0.6, delay: 1 }}
 				>
 					Sites vitrines pour commerces de proximité —{" "}
-					<span className="text-foreground">à partir de 700€ ou 70€/mois</span>.
+					<span className="text-foreground">à partir de 700€ ou 100€/mois</span>.
 				</motion.p>
 
 				<motion.div
@@ -71,21 +71,16 @@ export function Hero() {
 			</div>
 
 			<motion.div
-				className="relative aspect-square w-full"
+				className="relative aspect-square w-full overflow-hidden rounded-[2rem] bg-dark/95"
 				initial={{ opacity: 0, scale: 0.96 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.9, delay: 0.4 }}
 			>
-				<div className="absolute inset-0 rounded-[2rem] bg-dark/95" />
-				<div className="absolute inset-6 rounded-[1.5rem] border border-dark-foreground/15" />
-				<motion.div
-					className="absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/50"
-					animate={{ rotate: 360 }}
-					transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+				<img
+					src="/assets/pdp.png"
+					alt="Titouan Hellégouarch, développeur web à Aulnay-sous-Bois"
+					className="h-full w-full object-cover"
 				/>
-				<div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-heading text-7xl font-light text-gold">
-					TH
-				</div>
 			</motion.div>
 		</section>
 	);

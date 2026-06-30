@@ -8,6 +8,7 @@ import { SiteNav } from "@/components/portfolio/site-nav";
 import { StatsBar } from "@/components/portfolio/stats-bar";
 import { Testimonials } from "@/components/portfolio/testimonials";
 import { WhyMatters } from "@/components/portfolio/why-matters";
+import { Faq } from "@/components/portfolio/Faq";
 
 export default function Page() {
 	return (
@@ -18,6 +19,7 @@ export default function Page() {
 			<WhyMatters />
 			<Projects />
 			<Services />
+			<Faq />
 			<About />
 			<Testimonials />
 			<Contact />

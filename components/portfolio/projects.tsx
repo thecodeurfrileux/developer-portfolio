@@ -7,19 +7,22 @@ import { FadeIn } from "./fade-in";
 const projects = [
 	{
 		name: "Fleuriste du Marché",
-		description: "Identité élégante, menu en ligne et réservation par mail.",
+		description:
+			"Site vitrine pour fleuriste à Aulnay-sous-Bois — identité élégante, menu en ligne et réservation.",
 		image: "/assets/fleuriste-portofolio.jpg",
 		href: "/fleuriste",
 	},
 	{
 		name: "Tête en l'hair",
-		description: "Site fictif d'un coiffeur. Moderne et style, prise de rdv par telephone",
+		description:
+			"Site fictif d'un coiffeur à Bondy seine-saint-Denis (93). Moderne et style, prise de rdv par telephone",
 		image: "/assets/coupe-cheveux.jpg",
 		href: "/barber-shop",
 	},
 	{
 		name: "Maison Lefèvre",
-		description: "Site vitrine d'une boulangerie chaleureux avec horaires et carte des pains.",
+		description:
+			"Site vitrine d'une boulangerie chaleureuse à pavillon-sous-Bois avec horaires et carte des pains.",
 		image: "/assets/pain.jpg",
 		href: "/boulangerie",
 	},
