@@ -8,7 +8,7 @@ const projects = [
 	{
 		name: "Fleuriste du Marché",
 		description: "Identité élégante, menu en ligne et réservation par mail.",
-		image: "/assets/bouquet-rose.jpg",
+		image: "/assets/fleuriste-portofolio.jpg",
 		href: "/fleuriste",
 	},
 	{

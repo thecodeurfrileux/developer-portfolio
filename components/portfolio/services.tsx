@@ -7,7 +7,7 @@ import { FadeIn } from "./fade-in";
 const services = [
 	{
 		name: "Site vitrine essentiel",
-		price: "600€",
+		price: "700€",
 		features: [
 			"Une page élégante et responsive au couleur de l'entreprise",
 			"Coordonnées, horaires et plan",
@@ -16,16 +16,16 @@ const services = [
 	},
 	{
 		name: "Site vitrine premium",
-		price: "900€",
+		price: "1400€",
 		features: [
 			"Features sur mesure",
-			"prise de rdv personalisé, design personalisé",
+			"design personalisé",
 			"Optimisation référencement local",
 		],
 	},
 	{
 		name: "Maintenance mensuelle",
-		price: "60€/mois",
+		price: "50€/mois",
 		features: [
 			"Mises à jour et sauvegardes",
 			"Petites modifications de contenu",

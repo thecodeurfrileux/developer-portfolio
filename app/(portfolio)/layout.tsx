@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 	],
 	openGraph: {
 		title: "Titouan Hellégouarch — Développeur web",
-		description: "Sites vitrines pour commerces de proximité. À partir de 600€.",
+		description: "Sites vitrines pour commerces de proximité. À partir de 700€.",
 		url: "https://titouanhellegouarch.fr",
 		siteName: "Titouan Hellégouarch",
 		locale: "fr_FR",
