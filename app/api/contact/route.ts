@@ -4,14 +4,15 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-	const { nom, email, message } = await req.json();
+	const { nom, email, message, source } = await req.json();
 
 	try {
 		await resend.emails.send({
-			from: "Site internet <onboarding@resend.dev>", // change après vérification domaine
+			from: "Site internet <contact@titouanhellegouarch.fr>",
 			to: "titouan.hellegouarch2@gmail.com",
 			subject: `Nouveau message de ${nom}`,
 			html: `
+			<p><strong>Source :</strong> ${source}</p>
         <p><strong>Nom :</strong> ${nom}</p>
         <p><strong>Email :</strong> ${email}</p>
         <p><strong>Message :</strong></p>

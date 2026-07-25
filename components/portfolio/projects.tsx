@@ -13,16 +13,16 @@ const projects = [
 		href: "/fleuriste",
 	},
 	{
-		name: "Tête en l'hair",
+		name: "Barber 93",
 		description:
-			"Site fictif d'un coiffeur à Bondy seine-saint-Denis (93). Moderne et style, prise de rdv par telephone",
+			"Site fictif d'un coiffeur à Aulnay. 1er site référencé sur google de barber dans le 93. Design moderne, prise de rdv par telephone",
 		image: "/assets/coupe-cheveux.jpg",
 		href: "/barber-shop",
 	},
 	{
 		name: "Maison Lefèvre",
 		description:
-			"Site vitrine d'une boulangerie chaleureuse à pavillon-sous-Bois avec horaires et carte des pains.",
+			"Site vitrine d'une boulangerie chaleureuse à Treillieres avec horaires et carte des pains.",
 		image: "/assets/pain.jpg",
 		href: "/boulangerie",
 	},

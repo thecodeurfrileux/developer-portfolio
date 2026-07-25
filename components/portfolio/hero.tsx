@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 const line1 = ["Développeur", "Web", "à", "Aulnay-sous-Bois"];
 const line2 = ["Création", "de", "Sites", "Vitrines."];
-const line3 = ["Titouan", "Hellégouarch"];
 
 export function Hero() {
 	let wordIndex = 0;
@@ -36,7 +35,6 @@ export function Hero() {
 				<h1 className="font-heading text-4xl font-light leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
 					<span className="block">{line1.map(word)}</span>
 					<span className="block">{line2.map(word)}</span>
-					<span className="block">{line3.map(word)}</span>
 				</h1>
 
 				<motion.p
@@ -46,7 +44,7 @@ export function Hero() {
 					transition={{ duration: 0.6, delay: 1 }}
 				>
 					Sites vitrines pour commerces de proximité —{" "}
-					<span className="text-foreground">à partir de 600€ ou 100€/mois</span>.
+					<span className="text-foreground">à partir de 600€</span>.
 				</motion.p>
 
 				<motion.div

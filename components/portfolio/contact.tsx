@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { FadeIn } from "./fade-in";
+import { usePathname } from "next/navigation";
 
 export function Contact() {
+	const pathname = usePathname();
 	const [sent, setSent] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
@@ -22,7 +24,7 @@ export function Contact() {
 			const res = await fetch("/api/contact", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ nom, email, message }),
+				body: JSON.stringify({ nom, email, message, source: pathname }),
 			});
 
 			if (res.ok) {

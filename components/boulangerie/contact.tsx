@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { MapPin, Phone, Clock, Check } from "lucide-react";
 
 export function Contact() {
+	const pathname = usePathname();
 	const [sent, setSent] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
@@ -22,7 +24,7 @@ export function Contact() {
 			const res = await fetch("/api/contact", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ nom, email, message }),
+				body: JSON.stringify({ nom, email, message, source: pathname }),
 			});
 
 			if (res.ok) {
@@ -65,9 +67,9 @@ export function Contact() {
 							<div>
 								<h3 className="font-heading text-lg font-semibold text-foreground">Adresse</h3>
 								<p className="mt-1 leading-relaxed text-muted-foreground">
-									12 rue des Boulangers
+									38 rue de la mairie
 									<br />
-									75004 Paris, France
+									44119 Treillieres
 								</p>
 							</div>
 						</div>
@@ -81,7 +83,7 @@ export function Contact() {
 									Téléphone
 								</h3>
 								<p className="mt-1 leading-relaxed text-muted-foreground">
-									<a href="tel:+33142000000" className="transition-colors hover:text-primary">
+									<a href="tel:+33652413488" className="transition-colors hover:text-primary">
 										06 52 41 34 88
 									</a>
 								</p>
@@ -98,11 +100,11 @@ export function Contact() {
 								</h3>
 								<ul className="mt-1 space-y-1 leading-relaxed text-muted-foreground">
 									<li className="flex justify-between gap-6">
-										<span>Mardi – Vendredi</span>
+										<span>Mardi – Samedi</span>
 										<span>7h00 – 19h30</span>
 									</li>
 									<li className="flex justify-between gap-6">
-										<span>Samedi – Dimanche</span>
+										<span>Dimanche</span>
 										<span>7h00 – 13h00</span>
 									</li>
 									<li className="flex justify-between gap-6">

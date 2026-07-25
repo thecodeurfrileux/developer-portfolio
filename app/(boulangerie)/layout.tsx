@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: "Maison Lefèvre — Boulangerie Artisanale",
+	title: "Maison Lefèvre — Boulangerie Artisanale à Treillieres (44)",
 	description:
-		"Maison Lefèvre — pains, viennoiseries et pâtisseries faits maison, avec passion. Une boulangerie artisanale au cœur de votre quartier.",
+		"Maison Lefèvre — pains, viennoiseries et pâtisseries faits maison, avec passion. Passez commande sur le site ou venez nous rendre visite ! Une boulangerie artisanale au cœur de Treillieres.",
 };
 
 export const viewport: Viewport = {

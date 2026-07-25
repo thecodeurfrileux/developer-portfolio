@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
-import "./globals.css"; // ✅ garde ton CSS
+import "./globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const bebas = Bebas_Neue({
@@ -11,9 +11,9 @@ const bebas = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-	title: "Barber 93 — Le style, c'est sérieux. | Aulnay-sous-Bois",
+	title: "Barber 93 Aulnay-sous-Bois — Coupe Homme 15€",
 	description:
-		"Barber 93, le barbershop d'Aulnay-sous-Bois (93600). Coupe homme, barbe, coupe enfant.",
+		"Barber 93, le barbershop d'Aulnay-sous-Bois (93600). Coupe homme (15€), barbe (20€), coupe enfant (10€).",
 };
 
 export const viewport: Viewport = {
@@ -23,7 +23,6 @@ export const viewport: Viewport = {
 
 export default function BarberLayout({ children }: { children: React.ReactNode }) {
 	return (
-		// ✅ div à la place de <html> — garde toutes tes classes
 		<div
 			className={`dark ${inter.variable} ${bebas.variable} bg-background font-sans antialiased`}
 		>

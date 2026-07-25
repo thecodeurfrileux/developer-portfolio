@@ -2,7 +2,7 @@ export const faqs = [
 	{
 		question: "Combien coûte un site internet pour un commerçant à Aulnay-sous-Bois ?",
 		answer:
-			"Le site vitrine essentiel démarre à 600€ (page unique, responsive, mise en ligne incluse). Pour un projet sur-mesure avec design personnalisé comptez 1200€. Une formule d'abonnement à 100€/mois est aussi disponible, sans gros investissement de départ.",
+			"Le site vitrine essentiel démarre à 600€ (page unique, responsive, mise en ligne incluse). Pour un projet sur-mesure avec design personnalisé comptez 1200€.",
 	},
 	{
 		question: "Combien de temps faut-il pour créer mon site internet ?",
@@ -27,6 +27,6 @@ export const faqs = [
 	{
 		question: "Que se passe-t-il après la mise en ligne de mon site ?",
 		answer:
-			"Vous pouvez choisir la formule Maintenance mensuelle (60€/mois) qui inclut les mises à jour, les sauvegardes, de petites modifications de contenu et un support prioritaire par mail. Sans abonnement, le site reste fonctionnel mais les mises à jour ultérieures sont facturées à la demande.",
+			"Vous pouvez choisir la formule Maintenance mensuelle (30€/mois) qui inclut les mises à jour, les sauvegardes, de petites modifications de contenu et un support prioritaire par mail. Sans abonnement, le site reste fonctionnel mais les mises à jour ultérieures sont facturées à la demande.",
 	},
 ];

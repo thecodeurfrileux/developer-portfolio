@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
-import "./globals.css"; // ✅ garde ton CSS
+import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
 	variable: "--font-heading",
@@ -16,18 +16,15 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-	title: {
-		default:
-			"Développeur Web Aulnay-sous-Bois (93) — Agence Web Sites Vitrines | Titouan Hellégouarch",
-		template: "%s | Titouan Hellégouarch",
-	},
+	title: "Développeur Web Aulnay-sous-Bois (93) — Agence Web Sites Vitrines",
 	description:
-		"développeur web à Aulnay-sous-Bois (Seine-Saint-Denis). Création de sites vitrines pour commerçants, artisans et indépendants du 93. Devis rapide, livraison en 1 semaine",
+		"Développeur web freelance à Aulnay-sous-Bois (93). Création de sites vitrines modernes, rapides et optimisés SEO pour commerçants, artisans, professions libérales et indépendants. Devis gratuit et livraison en 1 semaine.",
 	openGraph: {
-		title: "Titouan Hellégouarch — Développeur web",
-		description: "Sites vitrines pour commerces de proximité. À partir de 600€.",
+		title: "Développeur web Aulnay-sous-Bois — Création site vitrine",
+		description:
+			"Sites vitrines pour commerces de proximité et indépendants. À partir de 600€.",
 		url: "https://titouanhellegouarch.fr",
-		siteName: "Titouan Hellégouarch",
+		siteName: "Développeur web Aulnay-sous-Bois — Création site vitrine",
 		locale: "fr_FR",
 		type: "website",
 		images: [
@@ -52,7 +49,6 @@ export const viewport: Viewport = {
 
 export default function PortfolioLayout({ children }: { children: React.ReactNode }) {
 	return (
-		// ✅ div à la place de <html>
 		<div
 			className={`${cormorant.variable} ${dmSans.variable} bg-background font-sans antialiased`}
 		>

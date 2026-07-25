@@ -16,7 +16,7 @@ const services = [
 	},
 	{
 		name: "Site vitrine premium",
-		price: "1400€",
+		price: "1200€",
 		features: [
 			"Features sur mesure",
 			"design personalisé",
@@ -25,7 +25,7 @@ const services = [
 	},
 	{
 		name: "Maintenance mensuelle",
-		price: "60€/mois",
+		price: "30€/mois",
 		features: [
 			"Mises à jour et sauvegardes",
 			"Petites modifications de contenu",

@@ -47,7 +47,7 @@ export function Contact() {
 								<p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
 									Téléphone
 								</p>
-								<p className="mt-1 font-medium text-foreground">01 48 00 00 93</p>
+								<p className="mt-1 font-medium text-foreground">06 52 41 34 88</p>
 							</div>
 						</a>
 

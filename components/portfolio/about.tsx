@@ -10,7 +10,6 @@ export function About() {
 			<div className="grid items-center gap-12 md:grid-cols-2">
 				<FadeIn>
 					<div className="overflow-hidden rounded-2xl">
-						{/* eslint-disable-next-line @next/next/no-img-element */}
 						<img
 							src="/assets/pdp.png"
 							alt="Portrait de Titouan Hellégouarch"
