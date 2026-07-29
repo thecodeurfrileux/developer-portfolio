@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "Développeur Web Aulnay-sous-Bois (93) — Agence Web Sites Vitrines",
+	title: "Création site internet Aulnay-sous-Bois (93) — Agence Web Sites Vitrines",
 	description:
 		"Développeur web freelance à Aulnay-sous-Bois (93). Création de sites vitrines modernes, rapides et optimisés SEO pour commerçants, artisans, professions libérales et indépendants. Devis gratuit et livraison en 1 semaine.",
 	openGraph: {
