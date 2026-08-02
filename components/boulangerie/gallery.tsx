@@ -27,7 +27,7 @@ export function Gallery() {
 							className="group aspect-square overflow-hidden rounded-xl shadow-sm"
 						>
 							<img
-								src={`/assets/${img.alt}.jpg`}
+								src={`/assets/boulangerie/${img.alt}.avif`}
 								alt={img.alt}
 								className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 							/>

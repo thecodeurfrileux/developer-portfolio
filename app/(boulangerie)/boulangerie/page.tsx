@@ -14,7 +14,7 @@ const jsonLd = {
 	"@type": "Bakery",
 	"@id": "${SITE_URL}/boulangerie#business",
 	name: "Maison Lefèvre",
-	image: "${SITE_URL}/assets/devanture-boulangerie.jpg",
+	image: "${SITE_URL}/assets/boulangerie/devanture-boulangerie.avif",
 	url: "${SITE_URL}/boulangerie",
 	telephone: "+33652413488",
 	priceRange: "€",

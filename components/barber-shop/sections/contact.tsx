@@ -84,7 +84,7 @@ export function Contact() {
 					<Reveal delay={120} className="min-h-80">
 						<div className="relative h-full min-h-80 overflow-hidden rounded-sm border border-border">
 							<img
-								src="https://picsum.photos/seed/map93aulnay/900/900"
+								src="assets/barber/map.avif"
 								alt="Plan d'accès vers Barber 93 à Aulnay-sous-Bois"
 								className="size-full object-cover"
 							/>

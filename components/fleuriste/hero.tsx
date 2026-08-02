@@ -40,7 +40,7 @@ export function Hero() {
 			>
 				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img
-					src="/assets/fleuriste.jpg"
+					src="/assets/fleuriste/fleuriste.jpg"
 					alt="Composition florale dans la lumière du matin"
 					className="aspect-[3/4] w-full object-cover"
 				/>

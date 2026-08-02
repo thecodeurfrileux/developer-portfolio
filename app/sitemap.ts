@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 1,
 		},
 		{
+			url: "https://titouanhellegouarch.fr/serrurier",
+			lastModified: new Date(),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
 			url: "https://titouanhellegouarch.fr/barber-shop",
 			lastModified: new Date(),
 			changeFrequency: "monthly",
@@ -24,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			url: "https://titouanhellegouarch.fr/fleuriste",
 			lastModified: new Date(),
 			changeFrequency: "monthly",
-			priority: 0.8,
+			priority: 0.6,
 		},
 	];
 }

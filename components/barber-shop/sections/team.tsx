@@ -40,7 +40,7 @@ export function Team() {
 							className="group flex items-center gap-5 rounded-sm border border-border bg-card p-5 transition-colors hover:border-primary sm:p-6"
 						>
 							<img
-								src={`https://picsum.photos/seed/${member.seed}/300/300`}
+								src={`assets/barber/${member.seed}.avif`}
 								alt={`Portrait de ${member.name}, barbier chez Barber 93`}
 								className="size-24 shrink-0 rounded-sm object-cover grayscale transition-all duration-500 group-hover:grayscale-0 sm:size-28"
 							/>

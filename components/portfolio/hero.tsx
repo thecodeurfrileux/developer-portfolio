@@ -75,7 +75,7 @@ export function Hero() {
 				transition={{ duration: 0.9, delay: 0.4 }}
 			>
 				<img
-					src="/assets/pdp.png"
+					src="/assets/portfolio/pdp.avif"
 					alt="Titouan Hellégouarch, développeur web à Aulnay-sous-Bois"
 					className="h-full w-full object-cover"
 				/>

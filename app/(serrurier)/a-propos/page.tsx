@@ -35,7 +35,7 @@ export default function AboutPage() {
 					<Reveal>
 						<div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-border shadow-lg">
 							<Image
-								src="assets/serrurier/artisan-portrait.png"
+								src="assets/serrurier/artisan-portrait.avif"
 								alt="Portrait de notre artisan serrurier à Aulnay-sous-Bois devant son véhicule d'intervention"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"

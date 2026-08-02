@@ -5,8 +5,10 @@ export function Hero() {
 		<section id="hero" className="relative flex min-h-[100svh] items-center overflow-hidden">
 			{/* Background */}
 			<img
-				src="https://picsum.photos/seed/barber93hero/1600/2000"
+				src="/assets/barber/Ambiance%20du%20shop.avif"
 				alt="Intérieur du barbershop Barber 93"
+				fetchPriority="high"
+				decoding="async"
 				className="absolute inset-0 size-full object-cover"
 			/>
 			<div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />

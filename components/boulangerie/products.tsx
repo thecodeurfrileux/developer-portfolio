@@ -1,19 +1,19 @@
 const products = [
 	{
 		title: "Pains",
-		image: "/assets/baguette.jpg",
+		image: "/assets/boulangerie/baguette.avif",
 		description:
 			"Baguettes de tradition, pains au levain et fougasses cuits sur sole. Une croûte dorée, une mie tendre et parfumée.",
 	},
 	{
 		title: "Viennoiseries",
-		image: "/assets/viennoiserie.jpg",
+		image: "/assets/boulangerie/viennoiserie.avif",
 		description:
 			"Croissants pur beurre, pains au chocolat et brioches feuilletées, façonnés chaque matin pour un plaisir feuilleté.",
 	},
 	{
 		title: "Pâtisseries",
-		image: "/assets/patisserie.jpg",
+		image: "/assets/boulangerie/patisserie.avif",
 		description:
 			"Tartes de saison, éclairs et entremets délicats. Des douceurs raffinées préparées avec les meilleurs ingrédients.",
 	},

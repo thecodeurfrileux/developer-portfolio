@@ -16,7 +16,7 @@ export function LocalBusinessJsonLd() {
 		"@type": "Locksmith",
 		"@id": `${SITE.url}/#business`,
 		name: SITE.name,
-		image: `${SITE.url}/assets/serrurier/serrurier-intervention.png`,
+		image: `${SITE.url}/assets/serrurier/serrurier-intervention.avif`,
 		url: SITE.url,
 		telephone: SITE.phoneHref,
 		email: SITE.email,

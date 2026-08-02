@@ -6,7 +6,7 @@ export function About() {
 				<div className="relative order-last md:order-first">
 					<div className="overflow-hidden rounded-2xl shadow-md">
 						<img
-							src="/assets/pain-artisanal.jpg"
+							src="/assets/boulangerie/pain-artisanal.avif"
 							alt="Le boulanger façonnant la pâte à la main dans le fournil"
 							className="h-full w-full object-cover"
 						/>

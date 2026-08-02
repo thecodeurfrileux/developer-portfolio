@@ -30,7 +30,7 @@ export function Gallery() {
 							className="group relative overflow-hidden rounded-sm"
 						>
 							<img
-								src={`/assets/${shot.label}.jpg`}
+								src={`/assets/barber/${shot.label}.avif`}
 								alt={shot.label}
 								className="aspect-square w-full object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
 							/>

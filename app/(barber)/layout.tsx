@@ -14,6 +14,9 @@ export const metadata: Metadata = {
 	title: "Barber 93 Aulnay-sous-Bois — Coupe Homme 15€",
 	description:
 		"Barber 93, le barbershop d'Aulnay-sous-Bois (93600). Coupe homme (15€), barbe (20€), coupe enfant (10€).",
+	alternates: {
+		canonical: "https://titouanhellegouarch.fr/barber-shop",
+	},
 };
 
 export const viewport: Viewport = {

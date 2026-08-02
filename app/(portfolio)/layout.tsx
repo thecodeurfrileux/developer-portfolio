@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "/assets/pdp.png",
+				url: "/assets/portfolio/pdp.avif",
 				width: 1200,
 				height: 630,
 				alt: "Création de sites vitrines pour commerces de proximité",

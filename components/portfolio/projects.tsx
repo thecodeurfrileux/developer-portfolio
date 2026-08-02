@@ -9,21 +9,21 @@ const projects = [
 		name: "Fleuriste du Marché",
 		description:
 			"Site vitrine pour fleuriste à Aulnay-sous-Bois — identité élégante, menu en ligne et réservation.",
-		image: "/assets/fleuriste-portofolio.jpg",
+		image: "/assets/portfolio/fleuriste-portofolio.avif",
 		href: "/fleuriste",
 	},
 	{
 		name: "Barber 93",
 		description:
 			"Site fictif d'un coiffeur à Aulnay. 1er site référencé sur google de barber dans le 93. Design moderne, prise de rdv par telephone",
-		image: "/assets/coupe-cheveux.jpg",
+		image: "/assets/portfolio/coupe-cheveux.avif",
 		href: "/barber-shop",
 	},
 	{
 		name: "Maison Lefèvre",
 		description:
 			"Site vitrine d'une boulangerie chaleureuse à Treillieres avec horaires et carte des pains.",
-		image: "/assets/pain.jpg",
+		image: "/assets/portfolio/pain.avif",
 		href: "/boulangerie",
 	},
 ];

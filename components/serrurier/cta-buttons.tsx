@@ -63,7 +63,7 @@ export function QuoteButtonLight({
 }) {
 	return (
 		<Link
-			href="/#contact"
+			href="/serrurier/#contact"
 			className={cn(
 				"inline-flex items-center justify-center gap-2 rounded-lg border border-primary/20 bg-background font-semibold text-primary transition-colors hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
 				size === "lg" ? "h-13 px-6 text-base" : "h-11 px-5 text-sm",

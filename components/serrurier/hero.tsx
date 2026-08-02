@@ -45,7 +45,7 @@ export function Hero() {
 				<div className="relative">
 					<div className="relative aspect-4/3 overflow-hidden rounded-2xl border border-primary-foreground/10 shadow-2xl">
 						<Image
-							src="/assets/serrurier/serrurier-intervention.png"
+							src="/assets/serrurier/serrurier-intervention.avif"
 							alt="Serrurier installant une serrure haute sécurité sur une porte à Aulnay-sous-Bois"
 							fill
 							priority

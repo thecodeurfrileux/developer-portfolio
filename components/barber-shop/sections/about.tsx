@@ -7,7 +7,7 @@ export function About() {
 				<Reveal className="relative">
 					<div className="overflow-hidden rounded-sm">
 						<img
-							src="/assets/coiffeur.jpg"
+							src="/assets/barber/coiffeur.avif"
 							alt="L'équipe au travail chez Barber 93"
 							className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105"
 						/>

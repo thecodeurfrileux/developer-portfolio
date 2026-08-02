@@ -11,7 +11,7 @@ export function About() {
 				<FadeIn>
 					<div className="overflow-hidden rounded-2xl">
 						<img
-							src="/assets/pdp.png"
+							src="/assets/portfolio/pdp.avif"
 							alt="Portrait de Titouan Hellégouarch"
 							className="aspect-[4/5] w-full object-cover"
 						/>

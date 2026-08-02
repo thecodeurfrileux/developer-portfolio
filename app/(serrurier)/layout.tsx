@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 		"ouverture de porte Aulnay",
 		"changement de serrure Seine-Saint-Denis",
 	],
-	alternates: { canonical: "/" },
+	alternates: { canonical: "/serrurier" },
 	openGraph: {
 		type: "website",
 		locale: "fr_FR",
@@ -48,7 +48,6 @@ export const metadata: Metadata = {
 		description:
 			"Dépannage serrurerie en urgence 24/7 à Aulnay-sous-Bois. Devis gratuit, tarifs fixes.",
 	},
-	generator: "v0.app",
 };
 
 export const viewport: Viewport = {
