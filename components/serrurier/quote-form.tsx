@@ -1,17 +1,53 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { CheckCircle2, Phone, Send } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { SERVICES } from "@/lib/services";
 
 export function QuoteForm() {
+	const pathname = usePathname();
 	const [submitted, setSubmitted] = useState(false);
+	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState(false);
 
-	function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
-		// Démo : aucun backend connecté. Brancher ici l'envoi (email, CRM, etc.).
-		setSubmitted(true);
+		setLoading(true);
+		setError(false);
+
+		const form = e.currentTarget;
+		const nom = (form.elements.namedItem("name") as HTMLInputElement).value;
+		const phone = (form.elements.namedItem("phone") as HTMLInputElement).value;
+		const serviceField = form.elements.namedItem("service") as HTMLSelectElement;
+		const service = serviceField.selectedOptions[0]?.textContent?.trim() || serviceField.value;
+		const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+
+		try {
+			const res = await fetch("/api/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({
+					nom,
+					email: "Non renseigné",
+					message: `Téléphone : ${phone}\n\nMessage : ${message || "Non renseigné"}`,
+					source: pathname,
+					raison: service,
+				}),
+			});
+
+			if (res.ok) {
+				setSubmitted(true);
+				form.reset();
+			} else {
+				setError(true);
+			}
+		} catch {
+			setError(true);
+		} finally {
+			setLoading(false);
+		}
 	}
 
 	if (submitted) {
@@ -114,11 +150,17 @@ export function QuoteForm() {
 
 			<button
 				type="submit"
+				disabled={loading}
 				className="mt-5 inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-accent text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent/90"
 			>
 				<Send className="size-4" aria-hidden="true" />
-				Envoyer ma demande de devis gratuit
+				{loading ? "Envoi en cours..." : "Envoyer ma demande de devis gratuit"}
 			</button>
+			{error && (
+				<p className="mt-3 text-center text-sm text-destructive" role="alert">
+					Une erreur est survenue. Veuillez réessayer ou nous appeler directement.
+				</p>
+			)}
 			<p className="mt-3 text-center text-xs text-muted-foreground">
 				Devis gratuit et sans engagement. Pour une urgence, appelez le{" "}
 				<a href={`tel:${SITE.phoneHref}`} className="font-semibold text-primary underline">

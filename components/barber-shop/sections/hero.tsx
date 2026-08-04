@@ -7,7 +7,6 @@ export function Hero() {
 			<img
 				src="/assets/barber/Ambiance%20du%20shop.avif"
 				alt="Intérieur du barbershop Barber 93"
-				fetchPriority="high"
 				decoding="async"
 				className="absolute inset-0 size-full object-cover"
 			/>

@@ -4,7 +4,13 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-	const { nom, email, message, source } = await req.json();
+	const { nom, email, message, source, raison } = await req.json();
+	const isSerrurierSource =
+		typeof source === "string" && (source === "/serrurier" || source.startsWith("/serrurier/"));
+	const highlightedReason =
+		isSerrurierSource && typeof raison === "string" && raison.trim()
+			? `<p><strong>Raison de la demande :</strong> ${raison}</p>`
+			: "";
 
 	try {
 		await resend.emails.send({
@@ -13,6 +19,7 @@ export async function POST(req: Request) {
 			subject: `Nouveau message de ${nom}`,
 			html: `
 			<p><strong>Source :</strong> ${source}</p>
+        ${highlightedReason}
         <p><strong>Nom :</strong> ${nom}</p>
         <p><strong>Email :</strong> ${email}</p>
         <p><strong>Message :</strong></p>

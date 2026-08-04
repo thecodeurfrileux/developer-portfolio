@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 	title: `Zone d'intervention — Serrurier ${SITE.address.city} et alentours`,
 	description:
 		"Découvrez les communes desservies par notre serrurier autour d'Aulnay-sous-Bois : Sevran, Villepinte, Le Blanc-Mesnil, Les Pavillons-sous-Bois, Vaujours, Tremblay-en-France.",
-	alternates: { canonical: "/zone-intervention" },
+	alternates: { canonical: "/serrurier/zone-intervention" },
 };
 
 export default function ZoneIndexPage() {
 	const breadcrumbs = [
-		{ name: "Accueil", url: "/" },
-		{ name: "Zone d'intervention", url: "/zone-intervention" },
+		{ name: "Accueil", url: "/serrurier" },
+		{ name: "Zone d'intervention", url: "/serrurier/zone-intervention" },
 	];
 
 	return (
@@ -41,7 +41,7 @@ export default function ZoneIndexPage() {
 						{CITIES.map((city, i) => (
 							<Reveal as="article" key={city.slug} delay={(i % 3) * 80}>
 								<Link
-									href={`/zone-intervention/${city.slug}`}
+									href={`/serrurier/zone-intervention/${city.slug}`}
 									className="group flex h-full flex-col rounded-xl border border-border bg-card p-6 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-md"
 								>
 									<span className="flex items-center gap-2 text-sm font-semibold text-accent">
