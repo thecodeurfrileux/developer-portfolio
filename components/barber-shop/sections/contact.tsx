@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/barber-shop/reveal";
 import { MapPin, Phone, Clock } from "lucide-react";
 
@@ -83,10 +84,12 @@ export function Contact() {
 
 					<Reveal delay={120} className="min-h-80">
 						<div className="relative h-full min-h-80 overflow-hidden rounded-sm border border-border">
-							<img
-								src="assets/barber/map.avif"
+							<Image
+								src="/assets/barber/map.avif"
 								alt="Plan d'accès vers Barber 93 à Aulnay-sous-Bois"
-								className="size-full object-cover"
+								fill
+								sizes="(max-width: 1023px) 100vw, (max-width: 1199px) 50vw, 540px"
+								className="object-cover"
 							/>
 							<div className="absolute inset-0 bg-background/30" />
 							<div className="absolute inset-0 flex flex-col items-center justify-center text-center">

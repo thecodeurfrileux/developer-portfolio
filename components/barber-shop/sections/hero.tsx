@@ -1,14 +1,16 @@
+import Image from "next/image";
 import { MapPin } from "lucide-react";
 
 export function Hero() {
 	return (
 		<section id="hero" className="relative flex min-h-[100svh] items-center overflow-hidden">
-			{/* Background */}
-			<img
-				src="/assets/barber/Ambiance%20du%20shop.avif"
+			<Image
+				src="/assets/barber/Ambiance du shop.avif"
 				alt="Intérieur du barbershop Barber 93"
-				decoding="async"
-				className="absolute inset-0 size-full object-cover"
+				fill
+				priority
+				sizes="100vw"
+				className="object-cover"
 			/>
 			<div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
 			<div className="absolute inset-0 bg-background/40" />

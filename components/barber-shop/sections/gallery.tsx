@@ -28,17 +28,15 @@ export function Gallery() {
 						<Reveal
 							key={shot.seed}
 							delay={(i % 3) * 80}
-							className="group relative overflow-hidden rounded-sm"
+							className="group relative aspect-square overflow-hidden rounded-sm"
 						>
-							<div className="relative aspect-square w-full overflow-hidden">
-								<Image
-									src={`/assets/barber/${shot.label}.avif`}
-									alt={shot.label}
-									fill
-									sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-									className="object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
-								/>
-							</div>
+							<Image
+								src={`/assets/barber/${shot.label}.avif`}
+								alt={shot.label}
+								fill
+								sizes="(max-width: 767px) 50vw, (max-width: 1199px) 33vw, 360px"
+								className="object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+							/>
 							<div className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-background/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 								<span className="p-3 text-xs font-medium uppercase tracking-wider text-foreground">
 									{shot.label}

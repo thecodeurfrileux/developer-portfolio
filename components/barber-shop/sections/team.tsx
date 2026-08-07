@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/barber-shop/reveal";
 import { InstagramIcon } from "@/components/barber-shop/instagram-icon";
 
@@ -33,36 +34,45 @@ export function Team() {
 				</Reveal>
 
 				<div className="mt-12 grid gap-6 sm:grid-cols-2">
-					{TEAM.map((member, i) => (
-						<Reveal
-							key={member.name}
-							delay={i * 120}
-							className="group flex items-center gap-5 rounded-sm border border-border bg-card p-5 transition-colors hover:border-primary sm:p-6"
-						>
-							<img
-								src={`assets/barber/${member.seed}.avif`}
-								alt={`Portrait de ${member.name}, barbier chez Barber 93`}
-								className="size-24 shrink-0 rounded-sm object-cover grayscale transition-all duration-500 group-hover:grayscale-0 sm:size-28"
-							/>
-							<div>
-								<h3 className="font-heading text-4xl leading-none tracking-wide">
-									{member.name}
-								</h3>
-								<p className="mt-1 text-xs font-medium uppercase tracking-wider text-primary">
-									{member.role}
-								</p>
-								<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-									{member.bio}
-								</p>
-								<a
-									href="#"
-									className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
-								>
-									<InstagramIcon className="size-4" />@{member.name.toLowerCase()}.barber93
-								</a>
-							</div>
-						</Reveal>
-					))}
+					{TEAM.map((member, i) => {
+						const instagramHandle = `${member.name.toLowerCase()}.barber93`;
+
+						return (
+							<Reveal
+								key={member.name}
+								delay={i * 120}
+								className="group flex items-center gap-5 rounded-sm border border-border bg-card p-5 transition-colors hover:border-primary sm:p-6"
+							>
+								<Image
+									src={`/assets/barber/${member.seed}.avif`}
+									alt={`Portrait de ${member.name}, barbier chez Barber 93`}
+									width={112}
+									height={112}
+									sizes="(min-width: 640px) 112px, 96px"
+									className="size-24 shrink-0 rounded-sm object-cover grayscale transition-all duration-500 group-hover:grayscale-0 sm:size-28"
+								/>
+								<div>
+									<h3 className="font-heading text-4xl leading-none tracking-wide">
+										{member.name}
+									</h3>
+									<p className="mt-1 text-xs font-medium uppercase tracking-wider text-primary">
+										{member.role}
+									</p>
+									<p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+										{member.bio}
+									</p>
+									<a
+										href={`https://www.instagram.com/${instagramHandle}`}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
+									>
+										<InstagramIcon className="size-4" />@{instagramHandle}
+									</a>
+								</div>
+							</Reveal>
+						);
+					})}
 				</div>
 			</div>
 		</section>

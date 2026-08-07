@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/barber-shop/reveal";
 
 export function About() {
@@ -5,11 +6,13 @@ export function About() {
 		<section id="about" className="border-t border-border py-20 md:py-28">
 			<div className="mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2 md:gap-16 md:px-6">
 				<Reveal className="relative">
-					<div className="overflow-hidden rounded-sm">
-						<img
+					<div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+						<Image
 							src="/assets/barber/coiffeur.avif"
 							alt="L'équipe au travail chez Barber 93"
-							className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105"
+							fill
+							sizes="(max-width: 767px) 100vw, 520px"
+							className="object-cover transition-transform duration-700 hover:scale-105"
 						/>
 					</div>
 					<div className="absolute -bottom-4 -right-4 hidden rounded-sm bg-primary px-6 py-4 text-primary-foreground sm:block">
